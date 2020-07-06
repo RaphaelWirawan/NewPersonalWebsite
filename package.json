@@ -8,7 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "next": "9.4.4",
+    "normalize.css": "^8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "^5.1.1"

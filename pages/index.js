@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import GlobalStyle from '../src/GlobalStyle'
-import styled from "styled-components";
+import './_app.js'
+import styled from "styled-components"
 import Up from '../components/home/Up'
 import Down from '../components/home/Down'
 
 
-const Container = styled.div`
+/*const Container = styled.div`
 width: 100vw;
 height: 100vh;
 display: flex;
@@ -19,19 +18,30 @@ const Hi = styled.h1`
   font-weight: 900;
   align-items: center;
   color: #fcfcfc;
-`;
+`;*/
 
 
 export default function Home() {
 
   return (
     <>
-      <Container>
+      <div style={{
+        width: "90vw",
+        height: "90vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "center"
+      }}>
         <Up />
-        <Hi>Hi.</Hi>
+        <h1 style={{
+          fontSize: "140px",
+          fontWeight: "900",
+          alignItems: "center",
+          color: "#ffffff"
+        }}>Hi.</h1>
         <Down />
-      </Container>
-      <GlobalStyle />
+      </div>
     </>
   )
 }
