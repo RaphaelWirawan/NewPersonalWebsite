@@ -22,7 +22,7 @@ export default function Down() {
 
     return (
         <div style={container}>
-            <p style={items}>Blog</p>
+            <a href="the-blog.vercel.app" style={{ textDecoration: 'none' }}><p style={items}>Blog</p></a>
             <p style={items}>Contact</p>
         </div>
     )

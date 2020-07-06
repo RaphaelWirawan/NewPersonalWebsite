@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { items, container, topLeftItem } from './Corners'
+import { items, container } from './Corners'
 
 /*const Container = styled.div`
         display: "flex",
@@ -20,12 +20,12 @@ export default function Up() {
 
     return (
         <div style={container}>
-            <div style={topLeftItem}>
-                <p style={{ transform: "rotate(-90deg)", flex: "0" }}>Alessandro Raphael Wirawan</p>
-                <p style={{ flex: "1" }}>Hobbyist Software Engineer</p>
-            </div>
 
-            <p style={items}>About</p>
+            <p style={items}>Alessandro Raphael Wirawan</p>
+
+
+
+            <p style={items}>Hobbyist Software Engineer</p>
         </div>
     )
 }

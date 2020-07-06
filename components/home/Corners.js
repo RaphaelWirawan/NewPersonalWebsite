@@ -1,7 +1,8 @@
 export const items = {
     fontSize: "16px",
     color: "#d6d6d6",
-    fontWeight: "500"
+    fontWeight: "500",
+    textDecoration: 'none'
 }
 
 export const container = {
@@ -10,15 +11,5 @@ export const container = {
     justifyContent: "space-between",
     alignItems: "center",
     width: "90vw",
-    height: "500px"
-}
-
-export const topLeftItem = {
-    fontSize: "16px",
-    color: "#d6d6d6",
-    fontWeight: "500",
-    width: "600px",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "flex-start"
+    height: "10vh"
 }

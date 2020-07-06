@@ -35,7 +35,7 @@ export default function Home() {
       }}>
         <Up />
         <h1 style={{
-          fontSize: "140px",
+          fontSize: "24vh",
           fontWeight: "900",
           alignItems: "center",
           color: "#ffffff"
