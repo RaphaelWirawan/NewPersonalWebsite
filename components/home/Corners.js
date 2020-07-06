@@ -10,7 +10,7 @@ export const container = {
     justifyContent: "space-between",
     alignItems: "center",
     width: "90vw",
-    height: "10vh"
+    height: "500px"
 }
 
 export const topLeftItem = {
@@ -18,7 +18,7 @@ export const topLeftItem = {
     color: "#d6d6d6",
     fontWeight: "500",
     width: "600px",
-
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    alignItems: "flex-start"
 }
