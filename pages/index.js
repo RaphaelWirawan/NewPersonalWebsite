@@ -1,7 +1,7 @@
 import './_app.js'
 import styled from "styled-components"
-import Up from '../components/home/Up'
-import Down from '../components/home/Down'
+import Up from '../components/Up'
+import Down from '../components/Down'
 
 
 const Container = styled.div`
@@ -12,7 +12,7 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 @media (max-width: 510px) {
-    height: 70vh;
+    height: 75vh;
   }
 `;
 /*

@@ -11,6 +11,7 @@ const Container = styled.div`
         height: 10vh;
         @media (max-width: 510px) {
             flex-direction: column;
+            height: 12vh;
   }
     `;
 /*
