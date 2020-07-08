@@ -2,7 +2,7 @@ import './_app.js'
 import styled from "styled-components"
 import Up from '../components/Up'
 import Down from '../components/Down'
-
+import GlobalStyle from "../src/GlobalStyle"
 
 const Container = styled.div`
 width: 100vw;
@@ -11,6 +11,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
+align-content: center;
 @media (max-width: 510px) {
     height: 75vh;
   }
@@ -44,6 +45,7 @@ export default function Home() {
         }}>Hi.</h1>
         <Down />
       </Container>
+      <GlobalStyle />
     </>
   )
 }
