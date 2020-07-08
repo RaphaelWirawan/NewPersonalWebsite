@@ -17,9 +17,19 @@ const Containermid = styled.div`
     height: 100vh;
     max-width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    @media (max-width: 1070px) {
+        justify-content: space-evenly;
+    }
+    @media (max-width: 880px) {
+        flex-direction: column;
+    }
+    @media (max-width: 450px) {
+        height: 102vh;
+    }
 `;
 
 const ContainerTop = styled.div`
@@ -32,7 +42,7 @@ const ContainerTop = styled.div`
     align-items: center;
     align-content: center;
     border-bottom: 2px double #3f3f3f;
-    @media (max-width: 700px) {
+    @media (max-width: 880px) {
         flex-direction: column;
         
     }
@@ -49,15 +59,35 @@ const Aboutme = styled.div`
     text-align: left;
 `;
 
-const Secondlayer = styled.div`
+const Skills = styled.div`
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 85vw;
+    width: 45vw;
     height: 100vh;
     text-align: center;
+    @media (max-width: 450px) {
+        margin-bottom: 30px;
+    }
+`;
+
+const MoreAboutMe = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 100vh;
+    text-align: center;
+    @media (max-width: 650px) {
+        width: 55vw;
+    }
+    @media (max-width: 500px) {
+        width: 60vw;
+    }
 `;
 
 const Heading = styled.h2`
@@ -93,9 +123,54 @@ const Face = styled.img`
     max-width: 200px;
     border-radius: 50%;
     margin-right: 40px;
-    @media (max-width: 700px) {
+    @media (max-width: 880px) {
         margin: 0;
     }
+`;
+
+const SkillsContainer = styled.div`
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    @media (max-width: 1070px) {
+        width: 440px
+    }
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
+`;
+
+const IndividualContainers = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 250px;
+`;
+
+const IndividualContainersAdobe = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 250px;
+    @media (max-width: 450px) {
+        margin-top: 10px;
+    }
+`;
+
+const ResponsiveContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 235px;
 `;
 
 export default function about() {
@@ -105,17 +180,41 @@ export default function about() {
                 <Face src="/SM Face3 Zoom.jpeg" />
                 <Aboutme>
                     <Heading>About Me.</Heading>
-                    <Details>I'm a 17 years old hobbyist software engineer based in <Highlight>Jakarta, ID</Highlight>. I have an undying passion for programing, and anything tech-related.</Details>
+                    <Details>I'm a 17 years old hobbyist software engineer based in <Highlight>Jakarta, ID</Highlight>.
+                    I have an undying passion for programing, and anything tech-related.</Details>
                     <Links>
                         <A href="https:/github.com/raphaelwirawan">Github</A> | <A href="https:/instagram/raphaelwirawan">Instagram</A> | <A href="https:/linkedin/in/raphaelwirawan">LinkedIn</A>
                     </Links>
                 </Aboutme>
             </ContainerTop>
             <Containermid>
-                <Secondlayer>
+                <MoreAboutMe>
                     <Heading>More About Me.</Heading>
-                    <Details>Other than programming, I also enjoy photography and cinematography.</Details>
-                </Secondlayer>
+                    <Details>I first started to fiddle with programs in the age of 12. From then on, I kept on learning about all that interests me.
+                    Other than programing, I enjoy photography and cinematography</Details>
+                </MoreAboutMe>
+                <Skills>
+                    <Heading>Skills.</Heading>
+                    <SkillsContainer>
+                        <ResponsiveContainer>
+                            <IndividualContainers>
+                                <Details>HTML/CSS</Details>
+                                <Details>Git</Details>
+                                <Details>Python</Details>
+                            </IndividualContainers>
+                            <IndividualContainers>
+                                <Details>JavaScript</Details>
+                                <Details>React JS</Details>
+                                <Details>Next JS</Details>
+                            </IndividualContainers>
+                        </ResponsiveContainer>
+                        <IndividualContainersAdobe>
+                            <Details>Adobe Premiere Pro</Details>
+                            <Details>Adobe After Effects</Details>
+                            <Details>Adobe Photoshop</Details>
+                        </IndividualContainersAdobe>
+                    </SkillsContainer>
+                </Skills>
             </Containermid>
         </>
     )
