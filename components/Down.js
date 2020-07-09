@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import './Corners'
-import { items, container } from "./Corners"
+import ReactTooltip from "react-tooltip";
+import "../src/tooltip.module.css"
 
 const Container = styled.div`
         display: flex;
@@ -14,20 +15,31 @@ const Container = styled.div`
             height: 12vh;
   }
     `;
-/*
-const Items = styled.p`
-font-size: 16px;
-color: #f7f7f7;
-font-weight: 300;
-`;*/
 
+const Items = styled.p`
+        font-size: 16px;
+        color: #d6d6d6;
+        font-weight: 500;
+`;
+
+/*const Tip = styled.ReactTooltip`
+        font-size: 20px !important;
+        pointer-events: auto !important;
+    &:hover {
+        visibility: visible !important;
+        opacity: 1 !important;
+ }
+`;*/
 
 export default function Down() {
 
     return (
-        <Container /*style={container}*/>
-            <a href="https://the-blog.vercel.app" style={{ textDecoration: 'none' }}><p style={items}>Blog</p></a>
-            <p style={items}>Contact</p>
-        </Container>
+        <>
+            <Container /*style={container}*/>
+                <a href="https://the-blog.vercel.app" style={{ textDecoration: 'none' }}><Items>Blog</Items></a>
+                <a href="mailto:alessandrowirawan@gmail.com" style={{ textDecoration: 'none' }}><Items data-tip='alessandrowirawan@gmail.com'>Contact</Items></a>
+                <ReactTooltip className="email" type="light" effect='solid' />
+            </Container>
+        </>
     )
 }

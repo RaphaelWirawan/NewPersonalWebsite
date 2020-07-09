@@ -1,6 +1,7 @@
 import './_app.js';
 import styled from "styled-components"
 
+
 const Container = styled.div`
     /*width: 100vw;*/
     height: 100vh;
@@ -191,7 +192,8 @@ export default function about() {
                 <MoreAboutMe>
                     <Heading>More About Me.</Heading>
                     <Details>I first started to fiddle with programs in the age of 12. From then on, I kept on learning about all that interests me.
-                    Other than programing, I enjoy photography and cinematography</Details>
+                    Other than programing, I enjoy photography and cinematography, because it allows me to be more creative in so many ways.
+                     I especially enjoy cinematography because when done right, could be very entertaining. </Details>
                 </MoreAboutMe>
                 <Skills>
                     <Heading>Skills.</Heading>

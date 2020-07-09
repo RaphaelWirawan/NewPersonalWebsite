@@ -1,0 +1,8 @@
+.email {
+    font-size: 20px !important;
+    pointer-events: auto !important;}
+    .email:hover {
+   visibility: visible !important;
+   opacity: 1 !important;
+    }
+   

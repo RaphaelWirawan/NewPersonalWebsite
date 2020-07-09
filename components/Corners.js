@@ -1,7 +1,7 @@
 export const items = {
     fontSize: "16px",
     color: "#d6d6d6",
-    fontWeight: "500"
+    fontWeight: "500",
 }
 
 export const container = {
