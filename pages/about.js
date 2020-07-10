@@ -187,7 +187,7 @@ export default function about() {
                     <Details>I'm a 17 years old hobbyist software engineer based in <Highlight>Jakarta, ID</Highlight>.
                     I have an undying passion for programing, and anything tech-related.</Details>
                     <Links>
-                        <A href="https://github.com/raphaelwirawan">Github</A> | <A href="https://instagram/raphaelwirawan">Instagram</A> | <A href="https://linkedin/in/raphaelwirawan">LinkedIn</A>
+                        <A href="https://github.com/raphaelwirawan">Github</A> | <A href="https://instagram.com/raphaelwirawan">Instagram</A> | <A href="https://linkedin.com/in/raphaelwirawan">LinkedIn</A>
                     </Links>
                 </Aboutme>
             </ContainerTop>
