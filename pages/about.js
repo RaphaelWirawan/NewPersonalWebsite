@@ -29,7 +29,7 @@ const Containermid = styled.div`
         flex-direction: column;
     }
     @media (max-width: 450px) {
-        height: 102vh;
+        height: 110vh;
     }
 `;
 
@@ -70,7 +70,8 @@ const Skills = styled.div`
     height: 100vh;
     text-align: center;
     @media (max-width: 450px) {
-        margin-bottom: 30px;
+        margin-bottom: 45px;
+        height: 50vh
     }
 `;
 
@@ -88,6 +89,8 @@ const MoreAboutMe = styled.div`
     }
     @media (max-width: 500px) {
         width: 60vw;
+        height: 60vh;
+        margin-top: 20px;
     }
 `;
 
@@ -184,7 +187,7 @@ export default function about() {
                     <Details>I'm a 17 years old hobbyist software engineer based in <Highlight>Jakarta, ID</Highlight>.
                     I have an undying passion for programing, and anything tech-related.</Details>
                     <Links>
-                        <A href="https:/github.com/raphaelwirawan">Github</A> | <A href="https:/instagram/raphaelwirawan">Instagram</A> | <A href="https:/linkedin/in/raphaelwirawan">LinkedIn</A>
+                        <A href="https://github.com/raphaelwirawan">Github</A> | <A href="https://instagram/raphaelwirawan">Instagram</A> | <A href="https://linkedin/in/raphaelwirawan">LinkedIn</A>
                     </Links>
                 </Aboutme>
             </ContainerTop>
