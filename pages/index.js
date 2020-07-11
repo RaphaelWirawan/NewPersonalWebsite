@@ -1,8 +1,12 @@
 import './_app.js'
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import Up from '../components/Up'
 import Down from '../components/Down'
 import GlobalStyle from "../src/GlobalStyle"
+import fadeIn, { fadeInUp } from 'react-animations/lib/fade-in'
+import Head from "next/head"
+
+const bounceAnimation = keyframes`${fadeInUp}`;
 
 const Container = styled.div`
 width: 100vw;
@@ -16,18 +20,21 @@ align-content: center;
     height: 75vh;
   }
 `;
-/*
+
 const Hi = styled.h1`
-  font-size: 140px;
+  font-size: 30vh;
   font-weight: 900;
   align-items: center;
-  color: #fcfcfc;
-`;*/
+  color: #ffffff;
+  align-items: center;
+  animation: 1s ${bounceAnimation};
+`;
 
 export default function Home() {
 
   return (
     <>
+      <Head><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /></Head>
       <Container /*style={{
         width: "100vw",
         height: "95vh",
@@ -37,12 +44,7 @@ export default function Home() {
         alignItems: "center"
       }}*/>
         <Up />
-        <h1 style={{
-          fontSize: "24vh",
-          fontWeight: "900",
-          alignItems: "center",
-          color: "#ffffff"
-        }}>Hi.</h1>
+        <Hi>Hi.</Hi>
         <Down />
       </Container>
       <GlobalStyle />

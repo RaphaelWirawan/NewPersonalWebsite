@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
     background-color: #1f1f1f;
-    font-family: 'hk grotesk';
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     /*width: 100vw;*/
     max-width: 100%;
